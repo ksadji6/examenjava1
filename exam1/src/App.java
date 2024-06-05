@@ -44,9 +44,9 @@ public class App {
                 Cours cours=new Cours();
                 System.out.println("Entrez la date du cours (AAAA-MM-JJ)");
                 cours.setDate(LocalDate.parse(sc.nextLine()));
-                System.out.println("Entrez l'heure de début du cours (AAAA-MM-JJ)");
+                System.out.println("Entrez l'heure de début du cours (HH:MM)");
                 cours.setHeureDb(LocalTime.parse(sc.nextLine()));
-                System.out.println("Entrez l'heure de fin du cours (AAAA-MM-JJ)");
+                System.out.println("Entrez l'heure de fin du cours (HH:MM)");
                 cours.setHeureFin(LocalTime.parse(sc.nextLine()));
                 System.out.println("Veuillez choisir un module");
                 modules=moduleService.listerModules();
