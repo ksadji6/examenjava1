@@ -50,6 +50,7 @@ public class App {
                 cours.setHeureFin(LocalTime.parse(sc.nextLine()));
                 System.out.println("Veuillez choisir un module");
                 modules=moduleService.listerModules();
+                module=sc.nextLine();
                 for(entities.Module mo : modules){
                     System.out.println("Le nom du module est: ");
                     System.out.println("*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_");
